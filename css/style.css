@@ -1,0 +1,447 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+
+}
+
+html{
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 16px;
+}
+
+body {
+    background-color: aliceblue;
+    color: black;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.1rem;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border: solid 1px aqua;
+}
+
+.logo{
+    font-size: 1.7rem;
+    color: black;
+    font-weight: 600;
+    cursor: default;
+}
+
+.nav a {
+    font-size: 1.2rem;
+    color: black;
+    padding: 0.5rem 1rem;
+    transition: 0.4s;
+
+    border: solid 1px blueviolet;
+}
+
+.nav a:hover{
+    color: black;
+
+}
+
+section {
+    min-height: 100vh; 
+    padding:  6rem 6rem 2rem;
+
+}
+
+span {
+    color: blueviolet;
+}
+
+.home, .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.home-img {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #fff;
+    border-radius: 10px;
+    width: 50%;
+
+}
+
+
+
+.about{
+    background-color: aliceblue;
+}
+
+.home-content, .home-content {
+    font-weight: 700;
+    font-size: 1.6rem;
+
+}
+
+.home-content h3, .about-content h3 {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.home-content h1, .about-content h1 {
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 1.6rem;
+}
+
+.home-content p, .about-content p {
+  margin-top: 1.2rem;
+  text-align: justify;
+}
+
+.services h2,
+.Portfolio h2,
+.Contato h2{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.services.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.services-container .services-box{
+    padding: 2rem 1rem 2.5rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: solid 0.15rem blueviolet;
+    background-color: white;
+    transition: 0.5s ease;
+
+}
+
+.services-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 20rem;
+    margin-bottom: 2rem;
+    
+
+}
+
+.services-container .services-box:hover{
+    border-color: blueviolet;
+    transform: scale(1.01);
+}
+
+.services-box i{
+    font-size: 2.3rem;
+    color: blueviolet;
+}
+
+.services-box h3{
+    font-size: 1.5rem;
+
+}
+
+.services-box p {
+    margin: 0.5rem;
+    letter-spacing: 0.1rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.Portfolio{
+    background-color: aliceblue;
+
+}
+
+.Portfolio-container{
+    display: grid;
+    gap: 1.2rem;
+}
+
+.Portfolio-box{
+    position: relative;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 0.6rem aliceblue;
+    overflow: hidden;
+}
+
+.Portfolio-box img{
+    width: 90%;
+    transition: 0.5rem;
+}
+
+.Portfolio-box img:hover {
+    transform: scale(1.1);
+}
+
+.Portfolio-box .Portfolio-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, blueviolet);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(50rem);
+    transition: 0.5s ease;
+}
+
+.Portfolio-box .Portfolio-layer{
+    transform: translate();
+}
+
+.Portfolio-layer h4{
+    font-size: 1.8rem;
+}
+
+.Portfolio-layer p{
+    margin: 0.2rem 0 0.5rem;
+}
+
+
+
+.Portfolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    background: aliceblue;
+    border-radius: 50%;
+}
+
+form {
+    max-width: 45rem;
+    margin: 0.6 auto;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    border: solid 1px black;
+}
+
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    border: solid 1px black;
+}
+
+form .input-box input,
+form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color:black;
+    background-color: aliceblue;
+    border-radius: 0.5rem;
+    margin: 0.4rem 0;
+
+    border: solid 1px black;
+
+}
+
+form textarea {
+    resize: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    background-color: aliceblue;
+}
+
+.social-media{
+    width: 0.5rem;
+}
+
+.social-media a  {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border: solid 0.15rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color:blueviolet;
+    margin: 0.5rem 0.5rem;
+    transition: 0.5s ease;
+
+}
+
+.social-media a:hover{
+    background-color: blueviolet;
+    color: aliceblue;
+    box-shadow: 0 0 .3rem blueviolet;
+
+}
+
+.Portfolio-layer a i{
+    font-size: 1.2rem;
+    color: aliceblue;
+}
+
+form{
+    max-width: 45rem;
+    margin: 0.6rem auto;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    border: solid 1px aliceblue;
+
+}
+
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    border: solid 1px aliceblue;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    background-color: blueviolet;
+    border-radius: 2rem;
+    color: aliceblue;
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease;
+    margin-top: 1.2rem;
+}
+
+.btn:hover{
+    box-shadow: 0 0 0.2rem blueviolet;
+    background-color: inherit;
+
+}
+
+.menu-hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 2rem;
+    height: 0.3rem;
+    background-color: black;
+    margin: 0.4rem 0;
+    transition: 0.3s ease;
+}
+
+.change .bar1{
+    transform: translate(0, 0.65rem) rotate(-45def);
+}.change .bar2{
+   opacity: 0;
+}
+.change .bar3{
+    transform: translate(0, -0.65rem) rotate(45def);
+}
+
+.Portfolio-container {
+    grid-template-columns: auto auto auto;
+}
+
+
+img{
+    width: 50%;
+}
+
+@media (min-width: 0px){
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .nav {
+display: block;
+    }
+
+    .nav-responsive a{
+        display: none;
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+    }
+
+    section{
+        padding: 6rem 2.5rem;
+    }
+
+    .home, .about {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .home-img, .about-img{
+    
+        max-width: 35%;
+    }
+
+    .home-content, .about-content{
+        width: 100%;
+    }
+
+    .home-content div{
+        text-align: center;
+
+    }
+
+    .home-content h1, .about-content h1 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+
+    .services-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    header {
+        background-color: blueviolet;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
